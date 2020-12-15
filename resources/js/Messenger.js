@@ -74,31 +74,31 @@ class MessageFunction {
         if (messenger.includes("hello") || messenger.includes("Hello") || messenger.includes("Hi") || messenger.includes("Hii")) {
             this.answer("Hii there! How are you?");
         }
-        if (messenger.includes("fine") || messenger.includes("Fine")) {
+        else if (messenger.includes("fine") || messenger.includes("Fine")) {
             this.answer("Good. It's nice to see you.");
         }
-        if (messenger.includes("Thanks") || messenger.includes("Thank you")) {
+        else if (messenger.includes("Thanks") || messenger.includes("Thank you")) {
             this.answer("So, what are you doing now?");
         }
-        if (messenger.includes("help") || messenger.includes("Help")) {
+        else if (messenger.includes("help") || messenger.includes("Help")) {
             this.answer("Sure. How can I help You?");
         }
-        if (messenger.includes("how are you?") || messenger.includes("How are you?")) {
+        else if (messenger.includes("how are you?") || messenger.includes("How are you?")) {
             this.answer("I am fine. What about you?");
         }
-        if (messenger.includes("here do you live?")) {
+        else if (messenger.includes("here do you live?")) {
             this.answer("I live in Dhaka, Bangladesh. May I know where do you live in?");
         }
-        if (messenger.includes("you have girlfriend?")) {
+        else if (messenger.includes("you have girlfriend?")) {
             this.answer("I have couple of friends but still I am single. What about your stat?");
         }
-        if (messenger.includes("Can I ask something?")) {
+        else if (messenger.includes("Can I ask something?")) {
             this.answer("Sure.");
         }
-        if (messenger.includes("I want you ")) {
+        else if (messenger.includes("I want you ")) {
             this.answer("Ok.");
         }
-        if (messenger.includes(".")) {
+        else if (messenger.includes(".")) {
             this.answer("Great.");
         }
         // Syntax:
@@ -125,7 +125,7 @@ sendButton.addEventListener("click", () => {
             date.classList.add("shown");
             setTimeout(() => {
                 date.classList.remove("shown");
-            }, 1000);
+            }, 2000);
         });
 
         let like = document.createElement("i");
